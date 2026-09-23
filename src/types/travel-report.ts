@@ -6,6 +6,7 @@ export type TravelReport = {
     subtitle: string;
     description: string;
     coverImage: string;
+    gallery: string[];
     date: string; // ISO format, e.g. "2026-06-01"
-    content: string[]; // paragraphs for the report page, filled in later
+    content: string[]; // paragraphs
 };
