@@ -36,43 +36,43 @@ export default function ContactForm() {
         >
             <div className='grid gap-6 sm:grid-cols-2'>
                 <FormField
-                    label='First name'
+                    label='Vorname'
                     name='firstName'
-                    placeholder='First name'
+                    placeholder='Vorname'
                     required
                 />
                 <FormField
-                    label='Last name'
+                    label='Nachname'
                     name='lastName'
-                    placeholder='Last name'
+                    placeholder='Nachname'
                     required
                 />
                 <FormField
-                    label='e-mail'
+                    label='E-Mail'
                     name='email'
                     type='email'
-                    placeholder='e-mail'
+                    placeholder='E-Mail'
                     required
                 />
                 <FormField
-                    label='Telephone number'
+                    label='Telefonnummer'
                     name='phone'
                     type='tel'
-                    placeholder='Telephone number'
+                    placeholder='Telefonnummer'
                 />
             </div>
 
             <FormField
-                label='Regarding'
+                label='Betreff'
                 name='regarding'
-                placeholder='Regarding'
+                placeholder='Betreff'
             />
 
             <FormField
                 as='textarea'
-                label='Your request'
+                label='Deine Anfrage'
                 name='message'
-                placeholder='Write your request here.'
+                placeholder='Schreibe hier deine Anfrage rein.'
                 required
             />
 
@@ -82,26 +82,26 @@ export default function ContactForm() {
                     checked={accepted}
                     onChange={(event) => setAccepted(event.target.checked)}
                     required
-                    className='mt-0.5 h-5 w-5 shrink-0 rounded border-slate-300 text-red-500 focus:ring-red-500'
+                    className='mt-0.5 h-5 w-5 shrink-0 rounded-lg border-amber-300 accent-amber-600 focus:ring-amber-500'
                 />
                 <span>
-                    I have read and accept the{" "}
+                    Ich habe die{" "}
                     <Link
                         href='/data-protection'
                         className='font-semibold text-red-500 underline'
                     >
-                        privacy policy
-                    </Link>
-                    .
+                        Datenschutzerklärung
+                    </Link>{" "}
+                    gelesen & akzeptiere diese.
                 </span>
             </label>
 
             <button
                 type='submit'
                 disabled={!accepted}
-                className='inline-flex items-center justify-center rounded-full bg-red-500 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-red-600 disabled:cursor-not-allowed disabled:opacity-50'
+                className='inline-flex items-center justify-center rounded-full bg-amber-600 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-amber-700 disabled:cursor-not-allowed disabled:opacity-50'
             >
-                Send inquiry
+                Anfrage senden
             </button>
         </form>
     );

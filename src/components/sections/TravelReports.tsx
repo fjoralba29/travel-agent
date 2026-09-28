@@ -6,13 +6,13 @@ import { travelReports } from "@/data/travel-reports";
 export default function TravelReports() {
     return (
         <section
-            id='reports'
+            id='meine-reiseberichte'
             className='bg-slate-50 py-20 sm:py-28'
         >
             <Container>
                 <SectionHeading
-                    eyebrow='My travel reports'
-                    title="Trips I've planned and taken myself"
+                    eyebrow='Reiseberichte'
+                    title='Meine Reiseberichte'
                     className='mx-auto text-center'
                 />
 

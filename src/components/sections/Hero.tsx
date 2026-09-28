@@ -6,7 +6,7 @@ import { siteConfig } from "@/data/site-config";
 export default function Hero() {
     return (
         <section
-            id='home'
+            id='Start'
             className='relative isolate -mt-24 flex min-h-svh items-center overflow-hidden bg-amber-900 pt-16'
         >
             <Image
@@ -17,7 +17,7 @@ export default function Hero() {
                 sizes='100vw'
                 className='-z-10 object-cover'
             />
-            {/* Dark overlay so the text stays readable on any photo */}
+
             <div
                 className='absolute inset-0 -z-10 bg-slate-900/60'
                 aria-hidden='true'
@@ -28,30 +28,28 @@ export default function Hero() {
                     {/* Text */}
                     <div className='max-w-xl text-white'>
                         <p className='text-sm font-semibold uppercase tracking-widest text-amber-600'>
-                            Your travel agent
+                            Ihr Reisebüro
                         </p>
                         <h1 className='mt-4 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl'>
-                            Trips planned by someone who has been there
+                            Persönliche Reiseberatung
                         </h1>
                         <p className='mt-6 text-lg text-slate-100'>
-                            Personal advice, honest travel reports and
-                            tailor-made journeys. Tell me where you want to go,
-                            and I will help you get there.
+                            Unabhängig. Kompetent. Ohne Mehrkosten.
                         </p>
 
                         <div className='mt-10 flex flex-col gap-4 sm:flex-row'>
                             <Button
-                                href='/#reports'
+                                href='/meine-reiseberichte'
                                 variant='light'
                                 className='bg-amber-600 text-white hover:bg-amber-700'
                             >
-                                View my travel reports
+                                Reiseberichte lesen
                             </Button>
                             <Button
-                                href='/#contact'
+                                href='/kontakt'
                                 variant='outlineLight'
                             >
-                                Contact me
+                                Jetzt Reise anfragen
                             </Button>
                         </div>
                     </div>

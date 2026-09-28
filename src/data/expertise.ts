@@ -4,11 +4,11 @@ export type ExpertiseItem = {
 };
 
 export const expertiseItems: ExpertiseItem[] = [
-    { title: "Beach Holidays", image: "/images/expertise/beach.jpeg" },
-    { title: "Culinary", image: "/images/expertise/culinary.jpeg" },
-    { title: "Family Travel", image: "/images/expertise/travel.jpeg" },
+    { title: "Strand- und Badeurlaub", image: "/images/expertise/beach.jpeg" },
+    { title: "Kulinarische Reisen", image: "/images/expertise/culinary.jpeg" },
+    { title: "Reisen mit Kind", image: "/images/expertise/travel.jpeg" },
     {
-        title: "City Breaks ",
+        title: "Städtereisen",
         image: "/images/expertise/city_breaks.jpeg",
     },
 ];

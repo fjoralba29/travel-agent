@@ -9,7 +9,7 @@ const offsets = ["lg:mt-0", "lg:mt-10", "lg:-mt-6"];
 export default function Expertise() {
     return (
         <section
-            id='expertise'
+            id='meine-expertise'
             className='py-20 sm:py-28'
         >
             <Container>
@@ -17,15 +17,15 @@ export default function Expertise() {
                     {/* Title beside the grid, sticky on scroll for large screens */}
                     <div className='lg:sticky lg:top-28 lg:self-start pt-32'>
                         <p className='text-sm font-semibold uppercase tracking-widest text-amber-700'>
-                            My expertise
+                            MEINE SPEZIALGEBIETE
                         </p>
                         <h2 className='mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl'>
-                            Trip types I plan every day
+                            Deine Reise, perfekt geplant – mit Herz & Know-how
                         </h2>
-                        <p className='mt-4 text-sm leading-relaxed text-slate-600'>
+                        {/* <p className='mt-4 text-sm leading-relaxed text-slate-600'>
                             From weekend city breaks to month-long adventures,
                             here's what I plan most often.
-                        </p>
+                        </p> */}
                     </div>
 
                     {/* Cards, staggered instead of aligned in a strict row */}

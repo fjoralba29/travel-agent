@@ -55,11 +55,7 @@ export default async function TravelReportPage({
             : report.coverImage;
     console.log("Hero image:", heroImage);
     const readingTime = getReadingTime(report.content);
-    const formattedDate = new Date(report.date).toLocaleDateString("en-GB", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-    });
+
     const pageUrl = `${siteConfig.url}/travel-reports/${report.slug}/`;
 
     return (
@@ -84,11 +80,14 @@ export default async function TravelReportPage({
                                     className='h-4 w-4'
                                     aria-hidden='true'
                                 />
-                                {report.city}, {report.country}
+                                {report.country}
                             </p>
                             <h1 className='mt-2 max-w-2xl text-3xl font-bold text-white sm:text-4xl lg:text-5xl'>
                                 {report.title}
                             </h1>
+                            <p className='text-lg text-slate-300'>
+                                {report.subtitle}
+                            </p>
                         </Container>
                     </div>
                 </div>
@@ -125,14 +124,14 @@ export default async function TravelReportPage({
                                     className='h-4 w-4'
                                     aria-hidden='true'
                                 />
-                                {formattedDate}
+                                {report.date}
                             </span>
                             <span className='flex items-center gap-1.5'>
                                 <Clock
                                     className='h-4 w-4'
                                     aria-hidden='true'
                                 />
-                                {readingTime} min read
+                                {readingTime} min Lesezeit
                             </span>
                         </div>
                     </div>
@@ -142,7 +141,12 @@ export default async function TravelReportPage({
                         {report.content.length > 0 ? (
                             <div className='space-y-5 text-base leading-relaxed text-slate-700'>
                                 {report.content.map((paragraph, index) => (
-                                    <p key={index}>{paragraph}</p>
+                                    <p
+                                        key={index}
+                                        dangerouslySetInnerHTML={{
+                                            __html: paragraph,
+                                        }}
+                                    />
                                 ))}
                             </div>
                         ) : (
@@ -162,9 +166,9 @@ export default async function TravelReportPage({
                     {/* Gallery */}
                     {report.gallery.length > 0 && (
                         <div className='pb-16'>
-                            <h2 className='mb-6 text-2xl font-bold text-slate-900'>
+                            {/* <h2 className='mb-6 text-2xl font-bold text-slate-900'>
                                 Gallery
-                            </h2>
+                            </h2> */}
                             <ReportGallery
                                 images={report.gallery}
                                 alt={`${report.city}, ${report.country}`}

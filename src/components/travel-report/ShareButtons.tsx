@@ -32,7 +32,9 @@ export default function ShareButtons({
 
     return (
         <div className='flex items-center gap-3'>
-            <span className='text-sm font-semibold text-slate-900'>Share:</span>
+            <span className='text-sm font-semibold text-slate-900'>
+                Teile diesen Beitrag:
+            </span>
             {links.map(({ label, icon: Icon, href }) => (
                 <a
                     key={label}

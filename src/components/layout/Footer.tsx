@@ -10,7 +10,7 @@ export default function Footer() {
         <footer className='border-t border-slate-200 bg-slate-50'>
             <Container className='flex flex-col items-center justify-between gap-4 py-8 text-sm text-slate-600 sm:flex-row'>
                 <p>
-                    © {year} {siteConfig.name}. All rights reserved.
+                    © {year} {siteConfig.name}. Alle Rechte vorbehalten.
                 </p>
                 <nav
                     aria-label='Legal'

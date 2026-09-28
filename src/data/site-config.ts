@@ -2,9 +2,10 @@
 export const siteConfig = {
     name: "Olesja Dervishi",
     url: "https://www.reise-genie.de",
-    description: "Short description of the service, around 150 characters.",
-    whatsappNumber: "0000000000000",
-    whatsappMessage: "Hello, I would like to ask about a trip.",
+    description:
+        "Persönliche Reiseberatung. Unabhängig. Kompetent. Ohne Mehrkosten.",
+    whatsappNumber: "4915150331351",
+    whatsappMessage: "",
     agentName: "Olesja Dervishi",
     agentTitle: "Urlaubsprofi",
     linkedinUrl: " https://www.linkedin.com/in/olesja-dervishi-607a4b18/",

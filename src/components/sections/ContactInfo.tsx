@@ -6,13 +6,13 @@ import { siteConfig } from "@/data/site-config";
 const items = [
     {
         icon: Phone,
-        label: "Phone",
+        label: "Telefon",
         href: `tel:${siteConfig.phone}`,
         value: siteConfig.phone,
     },
     {
         icon: Mail,
-        label: "Email",
+        label: "E-Mail",
         href: `mailto:${siteConfig.email}`,
         value: siteConfig.email,
     },
@@ -53,19 +53,20 @@ export default function ContactInfo() {
                 </span>
                 <div>
                     <p className='text-xs font-semibold uppercase tracking-wide text-slate-500'>
-                        Office
+                        Adresse
                     </p>
                     <p className='mt-0.5 text-sm font-medium leading-snug text-slate-900'>
                         {siteConfig.address.street},{" "}
                         {siteConfig.address.postalCode}{" "}
                         {siteConfig.address.city}
+                        {siteConfig.address.region}
                     </p>
                 </div>
             </div>
 
             <div className='flex flex-col justify-center gap-3 rounded-2xl border border-slate-200 bg-white p-5 sm:col-span-2 lg:col-span-1'>
                 <p className='text-xs font-semibold uppercase tracking-wide text-slate-500'>
-                    Follow along
+                    Folgen
                 </p>
                 <div className='flex gap-3'>
                     <a

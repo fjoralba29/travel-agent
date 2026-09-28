@@ -17,8 +17,8 @@ export default function RelatedReports({
         <section className='bg-slate-50 py-20 sm:py-28'>
             <Container>
                 <SectionHeading
-                    eyebrow='Keep exploring'
-                    title='More travel reports'
+                    eyebrow='Reiseberichte'
+                    title='Noch mehr Inspiration für deine nächste Traumreise'
                     className='mx-auto text-center'
                 />
                 <div className='mt-14 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:gap-14'>

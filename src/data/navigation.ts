@@ -1,12 +1,12 @@
 export const navigation = [
-    { label: "Home", href: "/" },
-    { label: "About me", href: "/#about" },
-    { label: "My travel reports", href: "/#reports" },
-    { label: "My expertise", href: "/#expertise" },
-    { label: "Contact", href: "/#contact" },
+    { label: "Start", href: "/" },
+    { label: "Über Mich", href: "/uber-mich" },
+    { label: "Meine Reiseberichte", href: "/meine-reiseberichte" },
+    { label: "Meine Expertise", href: "/meine-expertise" },
+    { label: "Kontakt", href: "/kontakt" },
 ];
 
 export const footerLinks = [
-    { label: "Imprint", href: "/imprint" },
-    { label: "Data protection", href: "/data-protection" },
+    { label: "Impressum", href: "/Impressum" },
+    { label: "Datenschutz", href: "/datenschutz" },
 ];

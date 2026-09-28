@@ -6,19 +6,19 @@ import ContactForm from "@/components/sections/ContactForm";
 export default function Contact() {
     return (
         <section
-            id='contact'
+            id='kontakt'
             className='bg-slate-50 py-20 sm:py-28'
         >
             <Container>
                 <SectionHeading
-                    eyebrow='Contact'
-                    title="Let's plan your next trip"
+                    eyebrow='KONTAKT'
+                    title='Urlaubsreif? Gleich bei mir melden!'
                     className='mx-auto text-center'
                 />
-                <p className='mx-auto mt-4 max-w-xl text-center text-slate-600'>
+                {/* <p className='mx-auto mt-4 max-w-xl text-center text-slate-600'>
                     Tell me a bit about where you'd like to go and I'll get back
                     to you personally, usually within a day.
-                </p>
+                </p> */}
 
                 <div className='mt-12'>
                     <ContactInfo />

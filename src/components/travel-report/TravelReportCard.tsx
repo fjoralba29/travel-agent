@@ -6,7 +6,7 @@ import type { TravelReport } from "@/types/travel-report";
 export default function TravelReportCard({ report }: { report: TravelReport }) {
     return (
         <Link
-            href={`/travel-reports/${report.slug}`}
+            href={`/meine-reiseberichte/${report.slug}`}
             className='group relative block aspect-[5/6] w-full overflow-hidden rounded-3xl shadow-lg transition-shadow hover:shadow-2xl'
         >
             <Image
@@ -26,7 +26,7 @@ export default function TravelReportCard({ report }: { report: TravelReport }) {
                         className='h-4 w-4 shrink-0'
                         aria-hidden='true'
                     />
-                    {report.city}, {report.country}
+                    {report.country}
                 </p>
 
                 <h3 className='mt-1.5 text-xl font-bold leading-snug text-white'>
@@ -37,8 +37,8 @@ export default function TravelReportCard({ report }: { report: TravelReport }) {
                     {report.description}
                 </p>
 
-                <span className='mt-4 inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-semibold text-amber-900 transition-colors group-hover:bg-amber-400 group-hover:text-white'>
-                    Explore
+                <span className='mt-4 inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-semibold text-amber-900 transition-colors group-hover:bg-amber-600 group-hover:text-white'>
+                    Mehr Lesen
                     <ArrowRight
                         className='h-4 w-4 transition-transform duration-300 group-hover:translate-x-1'
                         aria-hidden='true'
