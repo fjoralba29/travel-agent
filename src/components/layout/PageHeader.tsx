@@ -9,6 +9,7 @@ export default function PageHeader({
     subtitle,
     currentLabel,
     image,
+    className,
 }: {
     eyebrow: string;
     title: string;
@@ -16,9 +17,12 @@ export default function PageHeader({
     currentLabel: string;
     /** Optional background photo path, e.g. "/images/hero/agent1.jpeg" */
     image?: string;
+    className?: string;
 }) {
     return (
-        <div className='relative -mt-20 overflow-hidden bg-slate-900 pb-20 pt-32 lg:-mt-18 lg:pb-28 lg:pt-40'>
+        <div
+            className={`relative -mt-20 overflow-hidden bg-slate-900 pb-20 pt-32 lg:-mt-18 lg:pb-28 lg:pt-40 ${className || ""}`}
+        >
             {image && (
                 <>
                     <Image

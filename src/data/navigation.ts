@@ -7,6 +7,6 @@ export const navigation = [
 ];
 
 export const footerLinks = [
-    { label: "Impressum", href: "/Impressum" },
+    { label: "Impressum", href: "/impressum" },
     { label: "Datenschutz", href: "/datenschutz" },
 ];
